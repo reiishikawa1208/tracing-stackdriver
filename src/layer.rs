@@ -32,6 +32,7 @@ where
     Layer(
         tracing_subscriber::fmt::layer()
             .json()
+            .with_span_events(tracing_subscriber::fmt::format::FmtSpan::CLOSE)
             .event_format(EventFormatter::default()),
     )
 }

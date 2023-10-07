@@ -1,5 +1,3 @@
-#![cfg_attr(docsrs, feature(doc_cfg))]
-#![cfg_attr(not(test), deny(unused_crate_dependencies))]
 #![deny(missing_docs, unreachable_pub)]
 #![allow(clippy::needless_doctest_main)]
 #![doc = include_str!("../README.md")]
